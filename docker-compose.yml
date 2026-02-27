@@ -1,0 +1,9 @@
+services:
+  kratos-frontend:
+    build: .
+    container_name: kratos-frontend
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    restart: unless-stopped
